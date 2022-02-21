@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styleParquet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+</head>
+
+<body id="bodyId">
+
+
+
+    <h1 id="titleTop">Parquet Install</h1>
+
+    <!-- Navigation Bar  -->
+    <div id="menuId" class="menuContainer">
+        <div class="menuOne"></div>
+        <div class="menuTwo"></div>
+        <div class="menuThree"></div>
+
+    </div>
+    <div>
+        <a href="#bodyId"><span id="glyph-icon-top" class="glyphicon glyphicon-arrow-up "
+                style="font-size:50px;"></span></a>
+    </div>
+
+
+    <div class="container-fluid  nav-bar " id="listDown">
+        <div class="row  ">
+            <ul id="ul-nav" class="list-group align-items-left col-md-12 ">
+                <li class="list-group-item-danger  "><a class="text-danger nav-li" href="#pLine">Patterns</a> </li>
+                <li class="list-group-item-danger  "><a class="text-danger nav-li" href="#aLine">About</a> </li>
+                <li class="list-group-item-danger  "><a class="text-danger nav-li" href="#cLine">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Patterns -->
+
+
+    <div class="container-fluid ">
+
+        <h2 class="col-lg-12 bg-danger" id="pLine">Patterns</h2>
+    </div>
+    <div class="row" id="galery">
+
+        <div class="img-nav col-md-6">
+
+            <img src="images/1.jpg" alt="Mosaic Pattern" title="Mosaic Pattern">
+            <img src="images/parket1.jpg" alt="Spanish Style Pattern" title="Spanish Style Pattern">
+            <img src="images/fine_wood_flooring_02_hd_pictures_168385.jpg" title="Brick Bond Pattern"
+                alt="Brick Bond Pattern">
+            <img src="images/parket3.jpg" alt="Basket Weave Pattern" title="Basket Weave Pattern">
+            <img src="images/parket2.jpg" title="Herringbone Pattern" alt="Herringbone Pattern">
+            <img src="images/versailles pattern.jpg" alt="Versailles Pattern" title="Versailles Pattern">
+        </div>
+        <div id="mainImgContainer" class="col-md-6">
+            <img src="images/1.jpg" id="mainImg">
+            <span id="subtitle"></span>
+        </div>
+
+
+    </div>
+
+    <!-- ABOUT -->
+    <div class=" aboutTitle ">
+        <h2 class="bg-danger" id="aLine">About</h2>
+        <div class=" container-fluid row">
+            <div id="textAbout" class="col-md-6 bg-info ">
+                <span id="lorem-span"> Parquet Install</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum.
+            </div>
+            <div class="col-md-6" id="img-slide-container">
+
+                <div id="part1">
+                    <img class="imgSlide" title="Installing" src="images/part1.jpeg" alt="Installing">
+                    <span id="text-span1" class="description">Installing</span>
+                </div>
+                <div id="part2">
+                    <img class="imgSlide" title="Sanding" src="images/part2.jpg" alt="Sanding">
+                    <span class="description">Sanding</span>
+                </div>
+                <div id="part3">
+                    <img class="imgSlide" title="First Coat of Varnish" src="images/part3.jpg" alt="Painting-1">
+                    <span class="description">First Coat of Varnish</span>
+                </div>
+                <div id="part4">
+                    <img class="imgSlide" title="Second Coat of Varnish" src="images/part4.jpg" alt="Painting-2">
+                    <span class="description">Second Coat of Varnish</span>
+                </div>
+
+            </div>
+            <div id="btn-nav-bar">
+                <button id="btn1"></button>
+                <button id="btn2"></button>
+                <button id="btn3"></button>
+                <button id="btn4"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+
+    <div class=" contactTitle bg-danger">
+        <h2 id="cLine">Contact</h2>
+        <div class=" txt-wrap">
+            <div class=" info-wrap">
+                <div id="insta-img">
+                    <img id="imgImg" src="images/The_Instagram_Logo.jpg" alt="insta-logo">
+                    <img id="imgFb" src="images/fb.jpg" alt="Facebook-logo">
+                </div>
+                <h2>For more images Follow us on Instagram</h2>
+                <h2>Like our Facebook Profile</h2>
+                <h2> Write to our e-mail: www.parquetinstall.com.mk <span id="email"
+                        class="glyphicon glyphicon-envelope"></span></h2>
+                <h2> Give us a call on: +389 23 456 789 <span id="phone" class="glyphicon glyphicon-earphone"></span>
+                </h2>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        // VAR -  TOGGLE MENU
+        var menuContainer = document.querySelector("div.menuContainer");
+        var navBar = document.querySelector('div.nav-bar');
+        navBar.style.display = "none";
+        var ul_nav = document.getElementById('ul-nav');
+        // VAR - IMAGES THUMB
+        var mainImage = document.getElementById("mainImg");
+        mainImage.src = "images/1.jpg";
+        var allImages = document.querySelectorAll("div.img-nav img");
+        var subtitle = document.getElementById('subtitle');
+        subtitle.innerHTML = allImages[0].getAttribute('title');
+        allImages[0].className = 'active';
+
+        // VAR - IMAGES SLIDE
+        var imgContainer = document.getElementById('img-slide-container');
+       
+        var imgSlide = document.querySelectorAll('.imgSlide');
+        var part1 = document.getElementById('part1');
+        part1.style.display = 'block';
+        var imgPartArray = [part1,part2,part3,part4];
+        
+        var textSpan1 = document.getElementById('text-span1');
+        textSpan1.style.display = ' block';
+        var part2 = document.getElementById('part2');
+        var part3 = document.getElementById('part3');
+        var part4 = document.getElementById('part4');
+        var btn1 = document.getElementById('btn1');
+        var btn2 = document.getElementById('btn2');
+        var btn3 = document.getElementById('btn3');
+        var btn4 = document.getElementById('btn4');
+        var description = document.getElementById('description');
+       
+
+        // FUNCTION FOR TOGGLE MENU
+        toggleNav();
+
+        function toggleNav() {
+
+            menuContainer.addEventListener('click', function () {
+
+                if (navBar.style.display === 'none') {
+                    navBar.style.display = 'block';
+                } else {
+                    navBar.style.display = 'none';
+                }
+
+            });
+
+        }
+        // close hamburger menu after click a
+
+        closeMenu();
+        function closeMenu() {
+            ul_nav.addEventListener("click", function () {
+                menuContainer.click();
+            });
+
+        }
+
+        // FUNCTIONS FOR IMAGES THUMB
+        imagesPick();
+        function imagesPick() {
+            for (var i = 0; i < allImages.length; i++) {
+                allImages[i].addEventListener("click", function (event) {
+                    var carrPic = event.target.src;
+                    var picTitle = event.target.getAttribute('title');
+                    subtitle.innerHTML = picTitle;
+
+                    mainImage.src = carrPic;
+                    for (var i = 0; i < allImages.length; i++) {
+                        allImages[i].className = '';
+                    }
+                    event.target.className = 'active';
+                })
+            };
+
+        }
+
+        // FUNCTIONS FOR "ABOUT" "slide" IMAGES
+
+
+
+        imagesChoose();
+        function imagesChoose() {
+
+            btn1.addEventListener('click', function () {
+                if (part1.style.display = 'block') {
+                    part2.style.display = 'none';
+                    part3.style.display = 'none';
+                    part4.style.display = 'none';
+                }
+            })
+
+            btn2.addEventListener('click', function () {
+                if (part2.style.display = 'block') {
+                    part1.style.display = 'none';
+                    part3.style.display = 'none';
+                    part4.style.display = 'none';
+
+                }
+            })
+            btn3.addEventListener('click', function () {
+                if (part3.style.display = 'block') {
+                    part2.style.display = 'none';
+                    part1.style.display = 'none';
+                    part4.style.display = 'none';
+                }
+            })
+
+            btn4.addEventListener('click', function () {
+
+                if (part4.style.display = 'block') {
+                    part2.style.display = 'none';
+                    part1.style.display = 'none';
+                    part3.style.display = 'none';
+                }
+
+            })
+
+        }
+        generateButton();
+        function generateButton(){
+           
+            var btnArray = [imgPartArray];
+            var btnNavBar = document.getElementById('btn-nav-bar');
+            var btn = document.createElement('button');         
+           btn.innerHTML.length = "<button class'btnGo'><button>";
+            btnNavBar.appendChild(btn);
+           
+            console.log(btnArray);
+        }
+
+    </script>
+</body>
+
+</html>

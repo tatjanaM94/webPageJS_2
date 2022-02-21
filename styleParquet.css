@@ -1,0 +1,291 @@
+
+body,html{
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   box-sizing: border-box;
+ 
+background-image: url("images/3..jpg");
+background-position: top center,bottom center;
+background-repeat: repeat;
+background-size: cover;
+
+}
+
+
+
+
+
+/* TOP PAGE */
+#titleTop{
+    font-size: 100px;
+    margin: 15px;
+    position: relative;
+    display: inline-block;  
+    left: 400px;
+    top: 200px;
+    padding: 0;
+    
+}
+#ul-nav {
+    position: relative;
+    top: 200px;
+    
+}
+#glyph-icon-top{
+   color: darkorange;
+    position: fixed;
+    top: 660px;
+    left: 1280px;
+    z-index: 5;
+}
+#glyph-icon-top:hover{
+    color: paleturquoise;
+}
+.nav-bar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-image: url("images/navBarImage.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    
+  }
+  
+  div.nav-bar li{
+      font-size: 30px;
+      font-style: normal;
+      color: darkmagenta;
+      list-style-type: none;
+      margin: 10px;
+      text-align: center;
+        
+  }
+  div.nav-bar li:hover{
+      background-color: darkorange;
+      display: block;
+  }
+  
+  div.menuContainer{
+      display: block;
+      position: relative;
+      top:-30px;
+  } 
+  .menuOne{
+      position: relative;
+      width: 100px;
+      height: 10px;
+      margin: 5px;
+      background-color:darkorange;
+      top: 0;
+      left: 40px;
+      z-index: 1;
+  }
+  
+  .menuTwo{
+      position: relative;
+      top: 0;
+      left: 40px;  
+      width: 100px;
+      height: 10px;
+      margin: 5px;    
+      background-color:darkorange;
+      z-index: 1;
+  }
+  .menuThree{
+      position: relative;
+      left: 40px;
+      top: 0; 
+      width: 100px;
+      height: 10px;
+      margin: 5px;  
+      background-color: darkorange;
+      z-index: 1;
+  }
+
+/* PATTERN */
+#pLine{
+    position: relative;
+    top: 600px;
+    padding: 20px;
+    color: darkorange;  
+    font-size: 50px;
+   }
+   #galery{
+    position: absolute;
+    top: 950px;
+    width: 100%;  
+}
+#mainImg
+{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    opacity: 1;
+    border-color: crimson;
+    border-style: solid;
+    margin: 40px;
+}
+#mainImgContainer #subtitle{
+    position: absolute;
+    left: 56px;
+    bottom: 40px;
+    z-index: 1;
+    width: 500px;
+    background-color:rgba(255, 255, 255, 0.5);
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.img-nav img{
+    position: relative;
+    left: 100px;
+    display: inline-block;
+    width: 250px;
+    height: 150px;
+    margin: 20px;
+    opacity: 0.7;
+    border-style: solid;
+    border: darkorange;
+
+}
+
+.img-nav img:hover{
+    opacity: 1;
+    
+}
+/* About */
+#aLine{
+    padding: 30px;
+}
+#img-slide-container{
+    position: relative;
+    width: 700px;
+    height: 500px;
+       
+}
+#textAbout{
+    
+    text-align: justify;
+    vertical-align: text-bottom;
+}
+#lorem-span{
+    font-size: 25px;
+    color:darkorange;
+}
+#btn-nav-bar{
+    position: absolute;
+    left:1000px ;
+    bottom: 15px;
+    z-index: 2;
+}
+#btn-nav-bar button{
+    background-color: red;
+    height: 5px;
+    width: 25px;
+   padding: 5px;
+    border-color: rgb(134, 150, 117);
+
+}
+#btn-nav-bar button:hover{
+    background-color: darkorange;
+}
+ #part1{
+    position: absolute;
+   z-index: 1;
+} 
+#text-span1{
+    z-index: 1;
+}
+div.aboutTitle{
+    position: relative;
+    top: 1400px;
+    padding: 15px;
+    overflow: hidden;
+    color: darkorange;
+    font-size: 20px;
+
+}
+
+.imgSlide{
+    position: relative;
+    width: 700px;
+    height: 500px;
+    
+}
+.description{
+    position: absolute;
+    bottom: -10px;
+    background-color:rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    margin: 10px;
+    width: 100%;
+    color: red;
+    box-sizing: border-box;
+    font-size: 35px;
+   
+}
+
+/* Contact */
+.contactTitle{
+    height: 100%;
+}
+#email{
+    color: rgb(96, 194, 207);
+}
+#phone{
+    color: rgb(96, 194, 207);
+}
+#imgImg{
+position: relative;
+width: 40px;
+height: 40px;
+left: 360px;
+top: 80px;
+}
+#imgFb{
+    position: relative;
+width: 40px;
+height: 40px;
+left: 200px;
+top: 130px;
+}
+.txt-wrap{
+    position: relative;
+    left: 250px;
+    top: 150px;
+    background-color: white;
+    width: 60%;
+    height: 60%;
+   
+}
+.info-wrap{
+   text-align: center;
+  
+   vertical-align: middle;
+
+}
+div.contactTitle{
+    position: relative;
+    top: 1550px;
+    padding: 20px;
+    color: darkorange; 
+    font-size: 70px;
+}
+
+/* ////// */
+
+
+
+ 
+
+
+
+
+
+
